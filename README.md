@@ -157,7 +157,7 @@ CRF++ (https://taku910.github.io/crfpp/) was used to run the training. Observabl
 
 Feature template is needed to run CRF++. For this experiment, we've designed two templates: sequential and non-sequential. For the sequential template, consecutive features are considered. Window/segment size is only up to 6, since increasing the size per feature will drastically increase the number of features that will be generated. For the non-sequential template, we used pairs of the same feature in the sequence (e.g., i and i+1, i and i+2, i and i+3, …). The farthest is at the 8th sequence (i and i+8). A sample graphical representation of sequential and non-sequential design is found below.
 
-img
+<img width="416" alt="crf_img2" src="https://user-images.githubusercontent.com/90839613/200064093-29c4976e-7487-437d-86c3-ca24e42c1640.png">
 
 <h2>Experimental Results</h2>
 
