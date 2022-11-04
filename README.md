@@ -153,7 +153,7 @@ Table 2. Class values and the corresponding State values
 
 CRF++ (https://taku910.github.io/crfpp/) was used to run the training. Observable limitations and problems encountered are further discussed in the Analysis section below. The training and test set were converted into CRF++ readable format. For each line, the features and class labels are indicated, separated by white space. A sequence can be derived by adding an additional line with no entry. A sample screenshot of the CRF++ readable format is shown below.
 
-img
+<img width="398" alt="crf_img1" src="https://user-images.githubusercontent.com/90839613/200063784-daf7cd56-bee6-4eaa-8cdd-2ccef25c52b3.png">
 
 Feature template is needed to run CRF++. For this experiment, we've designed two templates: sequential and non-sequential. For the sequential template, consecutive features are considered. Window/segment size is only up to 6, since increasing the size per feature will drastically increase the number of features that will be generated. For the non-sequential template, we used pairs of the same feature in the sequence (e.g., i and i+1, i and i+2, i and i+3, …). The farthest is at the 8th sequence (i and i+8). A sample graphical representation of sequential and non-sequential design is found below.
 
